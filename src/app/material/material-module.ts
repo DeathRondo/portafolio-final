@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatDrawer, MatDrawerContainer, MatDrawerContent, MatSidenav } from '@angular/material/sidenav';
+import { MatDrawer, MatDrawerContainer, MatDrawerContent, MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 
 
 
@@ -12,13 +12,14 @@ import { MatDrawer, MatDrawerContainer, MatDrawerContent, MatSidenav } from '@an
     CommonModule,
     MatDrawer,
     MatDrawerContainer,
-    MatDrawerContent
+    MatDrawerContent,
   ],
   exports:[
     MatSidenav,
     MatDrawer,
     MatDrawerContainer,
-    MatDrawerContent
+    MatSidenavModule,
+    MatDrawerContent,
   ]
 })
 export class MaterialModule { }
