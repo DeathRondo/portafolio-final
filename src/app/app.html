@@ -1,0 +1,12 @@
+<div class="app-container">
+  <nav class="sidenav">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+    <a routerLink="/about" routerLinkActive="active">Acerca de</a>
+    <a routerLink="/projects" routerLinkActive="active">Proyectos</a>
+    <a routerLink="/contact" routerLinkActive="active">Contacto</a>
+  </nav>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
